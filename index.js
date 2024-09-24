@@ -32,7 +32,8 @@ const historyDheka = document.createElement("div");
 
     <p>Cause: ${hwon.innerText}</p>
         <p class="text-xs text-gray-500 my-2">Amount: ${inputNumber.toFixed(2)}</p>
-        <p class="text-xs text-gray-500"> Date: ${new Date().toLocaleDateString()}</p>
+       <p class="text-xs text-gray-500">Date: ${new Date().toLocaleString("en-US", { timeZone: "Asia/Dhaka" })}</p>
+
     
         
     `;
@@ -83,8 +84,8 @@ donateNowTow.addEventListener("click", function() {
 
  <p>Cause: ${htow.innerText}</p>
      <p class="text-xs text-gray-500 my-2">Amount: ${inputNumberTow.toFixed(2)}</p>
-     <p class="text-xs text-gray-500">Date ${new Date().toLocaleDateString()}</p>
- 
+    <p class="text-xs text-gray-500">Date: ${new Date().toLocaleString("en-US", { timeZone: "Asia/Dhaka" })}</p>
+
      
  `;
 
@@ -138,7 +139,8 @@ donateNowtehre.addEventListener("click", function() {
 
  <p>Cause: ${hthere.innerText}</p>
      <p class="text-xs text-gray-500 my-2">Amount: ${inputNumbertehre.toFixed(2)}</p>
-     <p class="text-xs text-gray-500">Date ${new Date().toLocaleDateString()}</p>
+    <p class="text-xs text-gray-500">Date: ${new Date().toLocaleString("en-US", { timeZone: "Asia/Dhaka" })}</p>
+
  
      
  `;
